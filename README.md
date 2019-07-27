@@ -1,4 +1,4 @@
-This is a test repository while i was learning next.js !
+This application is built using Next.js and Hasura Graphql Engine.
 
 ## How to run ?
 - Clone this repo
