@@ -19,7 +19,7 @@
     "graphql-tag": "^2.10.0",
     "helmet": "^3.15.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^7.0.2",
+    "next": "^11.1.0",
     "next-apollo": "^2.0.7",
     "react": "^16.6.3",
     "react-apollo": "^2.3.3",
