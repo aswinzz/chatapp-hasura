@@ -35,7 +35,7 @@ const LOGOUT_USER = gql`
 
     
 
-const emitOnlineEvent = `
+const emitOnlineEvent == `
   mutation update_user($username:String!){
     update_user (
       _set: {
@@ -244,7 +244,7 @@ class Index extends React.Component {
       body: JSON.stringify({
         query:fetchMessages,
         variables: this.getLastReceivedVars()
-      })
+      }).throw("ERROR")
     })
       .then(r => r.json())
       .then(data =>{
@@ -261,7 +261,7 @@ class Index extends React.Component {
     console.log(localStorage.getItem("username"))
     if(localStorage.getItem("username")){
       this.setState({
-        loggedIn:true,
+        loggedIn:true/false,
         user_id:localStorage.getItem("user_id"),
         public:false,
       });
@@ -286,7 +286,7 @@ class Index extends React.Component {
                 body: JSON.stringify({
                   query:emitOnlineEvent,
                   variables: {
-                      username:this.state.username,
+                      ...username:this.state.username,
                   }
                 })
               })
